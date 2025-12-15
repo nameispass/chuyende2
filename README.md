@@ -75,7 +75,7 @@ Dự án đã triển khai và so sánh 5 thuật toán phổ biến: **Logistic
 
 1.  **Độ an toàn tuyệt đối:** Hai mô hình **Logistic Regression** và **Random Forest** đạt **Precision = 1.0** và **FPR = 0.0**. Điều này có nghĩa là trên tập kiểm thử, **không có email hợp lệ nào bị đánh dấu nhầm là Spam**. Đây là tiêu chuẩn quan trọng nhất cho hệ thống lọc thư.
 2.  **Khả năng phát hiện:** **Naive Bayes** có Recall cao nhất (98.2%), tức là phát hiện được nhiều spam nhất, nhưng lại hay báo nhầm (FPR cao nhất 2.26%).
-3.  **Khuyến nghị:** Nhóm đề xuất sử dụng **Logistic Regression** cho bài toán thực tế. Mặc dù hiệu năng ngang bằng Random Forest, nhưng LR có tốc độ dự đoán nhanh hơn ($O(d)$ so với $O(M \cdot d)$) và chi phí tính toán thấp hơn, phù hợp cho hệ thống xử lý thời gian thực.
+3.  **Khuyến nghị:** Nhóm đề xuất sử dụng **Logistic Regression** cho bài toán thực tế. Mặc dù hiệu năng ngang bằng Random Forest, nhưng LR có tốc độ dự đoán nhanh hơn (`O(d)` so với `O(M . d)`) và chi phí tính toán thấp hơn, phù hợp cho hệ thống xử lý thời gian thực.
 
 ---
 *Đà Nẵng, Tháng 12 năm 2025* 
