@@ -8,7 +8,7 @@
 > **Giảng viên hướng dẫn:** TS. Nguyễn Văn Hiếu  
 > **Đơn vị:** Khoa Điện tử Viễn thông - Trường Đại học Bách Khoa, Đại học Đà Nẵng 
 
-## 1. 📖 Giới thiệu Dự án
+## 1. Giới thiệu Dự án
 
 Trước sự bùng nổ của công nghệ, email và tin nhắn điện tử đã trở thành phương tiện giao tiếp chính yếu, nhưng cũng kéo theo rủi ro lớn về an ninh mạng, đặc biệt là **Phishing Email** (Email lừa đảo). Kẻ tấn công thường mạo danh các tổ chức uy tín để đánh cắp thông tin nhạy cảm của người dùng.
 
@@ -16,7 +16,7 @@ Dự án này xây dựng một hệ thống phát hiện tự động sử dụ
 * **Hợp lệ (Legit)**: Email an toàn, công việc bình thường.
 * **Lừa đảo/Spam (Phishing)**: Email chứa mã độc, liên kết giả mạo hoặc nội dung lừa đảo.
 
-## 2. 👥 Thành viên Thực hiện (Nhóm 16)
+## 2. Thành viên Thực hiện (Nhóm 16)
 
 | STT | Họ và tên | Mã sinh viên | Vai trò và Đóng góp |
 |:---:|-----------|:---:|---|
@@ -24,7 +24,7 @@ Dự án này xây dựng một hệ thống phát hiện tự động sử dụ
 | 2 | **Lê Quang Hùng** | 106210238 | - Mô hình hóa toán học (Hàm mất mát, tối ưu).<br>- Triển khai và viết lý thuyết thuật toán **Decision Tree, Random Forest**.<br>- Phân tích độ phức tạp thuật toán.  |
 | 3 | **Trần Thanh Tín** | 106210253 | - Triển khai thuật toán **Naive Bayes, Logistic Regression**.<br>- Phân tích kết quả, tính toán chỉ số (Precision, Recall, F1).<br>- Tổng hợp báo cáo.  |
 
-## 3. 📊 Bộ Dữ liệu (Dataset)
+## 3. Bộ Dữ liệu (Dataset)
 
 Dữ liệu được tổng hợp từ hai nguồn uy tín với tổng cộng **9804 mẫu**:
 
@@ -35,7 +35,7 @@ Dữ liệu được tổng hợp từ hai nguồn uy tín với tổng cộng *
 * **Tập Huấn luyện (Training):** 7843 mẫu (~80%).
 * **Tập Kiểm thử (Testing):** 1961 mẫu (~20%).
 
-## 4. 🛠️ Trích chọn Đặc trưng (Feature Engineering)
+## 4. Trích chọn Đặc trưng (Feature Engineering)
 
 Hệ thống không chỉ dựa vào văn bản thuần túy mà trích xuất các đặc trưng kỹ thuật để phát hiện lừa đảo. Các đặc trưng chính bao gồm:
 
@@ -55,7 +55,7 @@ Hệ thống không chỉ dựa vào văn bản thuần túy mà trích xuất c
 * `NumScript`: Số lượng thẻ `<script>`.
 * `OnMouseOver`, `RightClick`: Các sự kiện Javascript dùng để đánh lừa người dùng hoặc chặn kiểm tra mã nguồn.
 
-## 5. 🤖 Các Mô hình và Kết quả
+## 5. Các Mô hình và Kết quả
 
 Dự án đã triển khai và so sánh 5 thuật toán phổ biến: **Logistic Regression (LR), Naive Bayes (NB), Decision Tree (DT), Random Forest (RF), và K-Nearest Neighbors (KNN)**.
 
@@ -71,7 +71,7 @@ Dự án đã triển khai và so sánh 5 thuật toán phổ biến: **Logistic
 
 *[Số liệu chi tiết xem tại Bảng 6 của báo cáo]* 
 
-### 💡 Nhận xét & Kết luận:
+### Nhận xét & Kết luận:
 
 1.  **Độ an toàn tuyệt đối:** Hai mô hình **Logistic Regression** và **Random Forest** đạt **Precision = 1.0** và **FPR = 0.0**. Điều này có nghĩa là trên tập kiểm thử, **không có email hợp lệ nào bị đánh dấu nhầm là Spam**. Đây là tiêu chuẩn quan trọng nhất cho hệ thống lọc thư.
 2.  **Khả năng phát hiện:** **Naive Bayes** có Recall cao nhất (98.2%), tức là phát hiện được nhiều spam nhất, nhưng lại hay báo nhầm (FPR cao nhất 2.26%).
